@@ -13,9 +13,10 @@ function createPost() {
 
   let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
+  //finds divs for post and comment section
   let postElement = document.getElementById("post");
   let commentElement = document.getElementById("comment");
-  
+  //creates post and adds the comment section in respective divs
   postElement.innerHTML = blogSection;
   commentElement.innerHTML = commentsSection;
 }
