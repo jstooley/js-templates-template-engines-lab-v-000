@@ -8,7 +8,7 @@ function createPost() {
   let postTitle = document.getElementById("postTitle").value;
   let postAuthor = document.getElementById("postAuthor").value;
   let postText = document.getElementById("postBody").value;
-  //set page template into html main
+  //sets pageTemplate into html main
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
   //finds divs for post and comment section
   let postElement = document.getElementById("post");
