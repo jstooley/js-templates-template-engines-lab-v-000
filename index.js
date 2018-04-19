@@ -10,15 +10,12 @@ function createPost() {
   let postText = document.getElementById("postBody").value;
 
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
-
-  let blogSection = postTemplate({ 'title': postTitle, 'body': postText, 'poster': postAuthor });
-  let commentsSection = commentsTemplate();
   //finds divs for post and comment section
   let postElement = document.getElementById("post");
   let commentElement = document.getElementById("comment");
   //creates post and adds the comment section in respective divs
-  postElement.innerHTML = blogSection;
-  commentElement.innerHTML = commentsSection;
+  postElement.innerHTML = postTemplate({ 'title': postTitle, 'body': postText, 'poster': postAuthor });
+  commentElement.innerHTML = commentsTemplate();
 }
 
 function postComment() {
