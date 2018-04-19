@@ -14,7 +14,7 @@ function createPost() {
   let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
   let postElement = document.getElementById("post");
-  let commnetElement = document.getElementById("comment");
+  let commentElement = document.getElementById("comment");
   debugger
   postElement.innerHTML = blogSection;
   commentElement.innerHTML = commentsSection;
