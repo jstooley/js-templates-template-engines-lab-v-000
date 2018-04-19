@@ -22,7 +22,7 @@ function postComment() {
 
   let commentText = document.getElementById("commentText").value;
   let commenterName = document.getElementById("commenter").value;
-
   let commentsSection = document.getElementById("comments");
+  
   commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
 }
