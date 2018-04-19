@@ -8,7 +8,8 @@
       <form id="post-form" onsubmit="createPost();return false;">
         Title: <input type="text" id="postTitle"><br>
         Author: <input type="text" id="postAuthor"><br>
-        Post: <input type="text" id="postBody" style="width:200px; height:50px;"><br>
+        Post: <input type="text" id="postBody" style="width:200px; height:50px;"cols="40" 
+       rows="5"><br>
         <input type="submit">
       </form>
     </main>
@@ -45,7 +46,7 @@
         <footer>Posted by: <%- poster %></footer>
       </article>
     </script>
-    
+
     </main>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
