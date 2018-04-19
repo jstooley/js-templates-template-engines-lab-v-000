@@ -7,11 +7,11 @@ function createPost() {
   // get blog values
   let postTitle = document.getElementById("postTitle").value;
   let postAuthor = document.getElementById("postAuthor").value;
-  let post = document.getElementById("postBody").value;
+  let postText = document.getElementById("postBody").value;
 
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
-  let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
+  let blogSection = postTemplate({ 'title': postTitle, 'body': postText, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
   //finds divs for post and comment section
   let postElement = document.getElementById("post");
