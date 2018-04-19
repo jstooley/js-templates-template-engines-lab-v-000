@@ -17,7 +17,7 @@ function createPost() {
   let commnetElement = document.getElementById("comment");
   debugger
   postElement.innerHTML = blogSection;
-  commentElement..innerHTML = commentsSection;
+  commentElement.innerHTML = commentsSection;
 }
 
 function postComment() {
